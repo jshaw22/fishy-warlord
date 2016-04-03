@@ -5,10 +5,7 @@ import './footer.css';
 const Footer = () => (
     <footer className="footer">
        <p className="text-xs-center text-muted">
-        Have questions or suggestions? Please file them on the
-        <a href="https://github.com/cloudmu/react-redux-starter-kit/issues" target="_blank"> Github </a>
-        or tweet
-        <a href="http://www.twitter.com/yunjun_mu" target="_blank"> me</a>.
+        BingoSmashers  © 2016
       </p>
     </footer>
 );

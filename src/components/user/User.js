@@ -18,9 +18,6 @@ const User = ({ user }) => {
                 <a href={ html_url } target="_blank">
                   <li className="user-name m-t-10">{login}</li>
                 </a>
-                <a href={ 'http://github.com/' + login + '/followers'} target="_blank">
-                  <li className="label label-success m-t-20">Followers</li>
-                </a>
               </ul>
             </div>
           </div>

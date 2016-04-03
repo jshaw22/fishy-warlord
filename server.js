@@ -60,7 +60,7 @@ app.post('/api/login', function(req, res) {
       const credentials = req.body;
       if(credentials.user==='admin' && credentials.password==='password'){
 
-        const profile = {'user': credentials.user, 'role': 'ADMIN'};
+        const profile = {'user': credentials.user, 'role': 'user'};
         const jwtToken = jwt.sign(profile, jwtConfig.secret, {'expiresIn' : 5*60});  // expires in 300 seconds (5 min)
         res.status(200).json({
           id_token: jwtToken

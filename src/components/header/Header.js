@@ -26,11 +26,11 @@ export default class Header extends Component {
             <div id="collapsingNavbar" className="collapse navbar-toggleable-xs">
                <IndexLink to="/" className="navbar-brand">
                 <div title="Home" className="brand"/>
-                Home
+                BingoSmashers
               </IndexLink>
               <ul className="nav navbar-nav">
-                <li title="Github Users with over 1000 Followers" className={isUsersPage ? 'nav-item active' : 'nav-item'}><Link className="nav-link" to="/users">Most Followed Users</Link></li>
-                <li title="Github Repos with over 10000 Stars" className={isReposPage ? 'nav-item active' : 'nav-item'}><Link className="nav-link" to="/repos">Most Starred Repos</Link></li>
+                <li title="My Profile" className={isUsersPage ? 'nav-item active' : 'nav-item'}><Link className="nav-link" to="/users">My Profile</Link></li>
+                <li title="Find Matches" className={isReposPage ? 'nav-item active' : 'nav-item'}><Link className="nav-link" to="/repos">Find Matches</Link></li>
                 <li title="About" className={isAboutPage ? 'nav-item active' : 'nav-item'}><Link className="nav-link" to="/about">About Us</Link></li>
               </ul>
 
@@ -42,7 +42,6 @@ export default class Header extends Component {
                   <ul className="dropdown-menu">
                     <a className="dropdown-item" href="#" onClick={ event => this.onLogoutClick(event)}><i className="fa fa-sign-out header_fa"/>Log out</a>
                     <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="https://github.com/cloudmu/react-redux-starter-kit"target="_blank" title="View on Github"><i className="fa fa-github header_fa"/>Github</a>
                   </ul>
                 </li>
               </ul>
